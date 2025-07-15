@@ -1,6 +1,9 @@
 import java.util.List;
+import java.util.Map;
 
+import controllers.LibroController;
 import models.Book;
+import validaciones.ValidacionesLibro;
 
 public class App {
     public static void main(String[] args) throws Exception {
@@ -31,5 +34,16 @@ public class App {
                 new Book("Ciberseguridad", "Pedro León", 2023),
                 new Book("Blockchain", "Marta Ríos", 2021),
                 new Book("Machine Learning", "Cristina Gómez", 2022));
+
+
+
+        LibroController controller = new LibroController();
+        Map<Book, Book> resultado = controller.procesarLibros(libros);
+        ValidacionesLibro.validarResultadoTreeMap(resultado);
+
+        //Listar libros ya ordenados
+        for (Book book : resultado.keySet()) {
+            System.out.println("Título: " + book.getTitle() + ", Autor: " + book.getAuthor() + ", Año: " + book.getAnio());
+        }
     }
 }
