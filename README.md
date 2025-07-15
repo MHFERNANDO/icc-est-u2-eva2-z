@@ -68,3 +68,7 @@ Recuerda que cada test aprobado sumará a tu nota final.
 | Nota final calculada automáticamente | -         |
 
 DEBERA EJECUTAR PRUEBAS DESDE APP.
+
+
+<img width="1410" height="176" alt="image" src="https://github.com/user-attachments/assets/da70911d-6745-44f0-be9f-868d51f61345" />
+
